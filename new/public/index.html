@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Games Hub is your go-to source for the latest free game giveaways. Discover top free games across multiple platforms!">
+  <meta name="keywords" content="Free Games, Giveaways, Epic Games, Steam, Ubisoft, Free Downloads">
+  <title>Free Games Hub - Free Game Giveaways</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Free Games Hub</h1>
+      <p class="tagline">Discover the Best Free Games on Every Platform</p>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="filters">
+          <select id="platformFilter">
+            <option value="all">All Platforms</option>
+            <option value="pc">PC</option>
+            <option value="steam">Steam</option>
+            <option value="epic-games-store">Epic Games</option>
+            <option value="ubisoft">Ubisoft</option>
+            <option value="gog">GOG</option>
+            <option value="itchio">itch.io</option>
+            <option value="ps4">PS4</option>
+            <option value="ps5">PS5</option>
+            <option value="xbox-one">Xbox One</option>
+            <option value="xbox-series-xs">Xbox Series X|S</option>
+            <option value="switch">Nintendo Switch</option>
+            <option value="android">Android</option>
+            <option value="ios">iOS</option>
+          </select>
+          <select id="sortBy">
+            <option value="date">Sort by Date</option>
+            <option value="value">Sort by Value</option>
+            <option value="popularity">Sort by Popularity</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section for a more engaging user experience -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Play the Hottest Free Games Now!</h2>
+      <p>Explore a curated selection of the best free game giveaways available across top platforms.</p>
+      <a href="#gamesContainer" class="explore-button">Explore Games</a>
+    </div>
+  </section>
+
+  <main>
+    <div id="gamesContainer" class="games-grid">
+      <!-- Games will be dynamically inserted here -->
+    </div>
+  </main>
+
+  <template id="gameTemplate">
+    <div class="game-card">
+      <img src="" alt="Game Image" class="game-image">
+      <div class="game-details">
+        <h2 class="game-title"></h2>
+        <p class="game-platform"></p>
+        <p class="game-description"></p>
+        <a href="#" class="claim-button">Claim Now</a>
+      </div>
+    </div>
+  </template>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Free Games Hub. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
